@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+
+int main() {
+    // Prime number
+    int numb;
+    int curr;
+
+    cout << "Enter the number" << endl;
+    cin >> numb;
+    curr = numb-1;
+    bool running = true;
+
+
+    while (2 < curr && running) {
+        if (numb % curr == 0) {
+            cout << "Number is NOT prime yooooo" << endl;
+            running = false;
+        }
+        curr -= 1;
+    }
+
+    if (running == true) {
+
+
+        cout << "Number is prime yooooo" << endl;
+
+    }
+    return 0;
+
+}
