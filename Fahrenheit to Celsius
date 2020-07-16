@@ -1,0 +1,28 @@
+
+#include <iostream>
+using namespace std;
+
+#include <iostream>
+using namespace std;
+
+
+int main() {
+    int S,E,W,conv;
+    cout<<"Enter Start"<<endl;
+    cin>>S;
+    cout<<"Enter end"<<endl;
+    cin>>E;
+    cout<<"Enter size"<<endl;
+    cin>>W;
+    while(S<=E){
+        //conv=((S- 32) * 5/9);
+        cout<< S  << " "<< ((S- 32) * 5/9)<<endl;
+        S=S+W;
+
+
+
+
+    }
+
+
+}
