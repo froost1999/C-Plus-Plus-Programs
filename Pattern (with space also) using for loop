@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout<<"Enter number"<<endl;
+    cin>>n;
+    int k=1,sp=n-1;
+    for(int i=1;i<=n;i+=1){
+        int c=i;
+        //For adding space
+        /*for(int j=1;j<=sp;j+=1){
+            cout<<" ";
+        }
+        sp=sp-1; */
+       for (int k=1;k<=i;k+=1){
+           cout<< c++;
+       }
+       cout<< endl;
+    }
+
+}
+
