@@ -1,0 +1,22 @@
+
+#include <iostream>
+using namespace std;
+
+
+int main() {
+    //Sum of even numbers from 1 to N
+    int num;
+    int temp;
+    int sum=0;
+    cout<< "Enter the number"<<endl;
+    cin>>num;
+    temp=new;
+    while(temp!=0){
+        if (temp%2==0){
+            sum=sum+temp;
+        }
+        temp-=1;
+    }
+
+    cout << "Sum is "<< sum<<endl;
+    }
