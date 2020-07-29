@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+
+int factorial(int n) {
+    int i=1;
+    int ans=1;
+    while (i<=n){
+        ans=ans*i;
+        i++;
+    }
+    return ans;
+}
+
+int main() {
+    // Write your code here
+    int n, r;
+    cin>> n;
+    cin>> r;
+
+    int ans_n= factorial(n);
+    int ans_r= factorial(r);
+    int ans_n_r= factorial(n-r);
+
+    cout<< (ans_n/(ans_r*ans_n_r));
+
+
+
+    //cout<< ans_n/ans_n*(ans_n-ans_t);
+
+
+
+
+
+}
