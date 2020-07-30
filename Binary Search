@@ -1,0 +1,40 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main(){
+     cout<<" Binary search"<<endl;
+     int n;
+     cout<<"How many elements?"<<endl;
+     cin>>n;
+     int arrays[100];
+     for(int i=0;i<n;i++){
+         cin>>arrays[i];
+     }
+     int end=n-1;
+     int start=0;
+     cout<<"Enter element to search"<<endl;
+     int search;
+     cin>>search;
+     bool found=false;
+     while(start<=end && !found){
+         int mid=floor((start+end)/2);
+
+         if(search==arrays[mid]){
+             cout<<"Element found at" <<mid<<endl;
+             found=true;
+         } else{
+             if(search<arrays[mid]){
+                 end=mid-1;
+             }
+             if(search>arrays[mid]){
+                 start=mid+1;
+             }
+
+         }
+
+     //cout<<"Element not found";
+     }
+
+}
